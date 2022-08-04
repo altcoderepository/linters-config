@@ -2,12 +2,12 @@
 
 ---
 
-Для использования **eslint** достаточно в файле **.eslintrc.js** использовать конфигурацию из репозитория
+Для использования **eslint** необходимо установить eslint и в файле **.eslintrc.js** использовать конфигурацию из репозитория
 
-```json
-{
-  "extends": "@alt-code/linters-config/eslint.js"
-}
+```node
+module.exports = {
+  extends: ['@alt-code/linters-config/eslint.js'],
+};
 ```
 
 Для конфигурации prettier добавить настройки в package.json
